@@ -1,0 +1,219 @@
+/* ----------- Variables ----------- */
+:root {
+  --verde-soft: #9ad1a5;
+  --verde-oscuro: #3a7b57;
+  --gris-claro: #f5f7f6;
+  --texto: #333;
+  --blanco: #fff;
+}
+
+/* ----------- General ----------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: var(--gris-claro);
+  color: var(--texto);
+}
+
+/* ----------- Navbar ----------- */
+.navbar {
+  background-color: var(--blanco);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--verde-oscuro);
+}
+
+.menu {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--texto);
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.menu a:hover,
+.menu a.active {
+  color: var(--verde-oscuro);
+}
+
+.btn-login {
+  background-color: var(--verde-soft);
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* ----------- Hero ----------- */
+.hero {
+  height: 80vh;
+  background: linear-gradient(to bottom right, var(--verde-soft), #e4f5ea);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  color: var(--verde-oscuro);
+}
+
+.hero-content p {
+  margin: 1rem 0;
+  font-size: 1.1rem;
+}
+
+.btn-primary {
+  background-color: var(--verde-oscuro);
+  color: var(--blanco);
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #2c5f44;
+}
+
+/* ----------- Features ----------- */
+.features {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background-color: var(--blanco);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 1rem;
+}
+
+/* ----------- Comunidad ----------- */
+.community {
+  background-color: var(--verde-soft);
+  text-align: center;
+  padding: 3rem 2rem;
+  color: var(--verde-oscuro);
+}
+
+.btn-secondary {
+  background-color: var(--blanco);
+  border: none;
+  padding: 0.7rem 1.3rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.btn-secondary:hover {
+  background-color: var(--verde-oscuro);
+  color: var(--blanco);
+}
+
+.comunidad-hero {
+  background: linear-gradient(to bottom right, #c6e9cc, var(--verde-soft));
+}
+
+/* ----------- Proyectos ----------- */
+.projects {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.project-card {
+  background-color: var(--blanco);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* ----------- Footer ----------- */
+footer {
+  background-color: var(--verde-oscuro);
+  color: var(--blanco);
+  text-align: center;
+  padding: 1rem;
+}
+
+/* ----------- Responsive ----------- */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    background-color: var(--blanco);
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    padding: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}

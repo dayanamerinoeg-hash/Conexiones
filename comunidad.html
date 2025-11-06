@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comunidad | Connectia</title>
+  <link rel="stylesheet" href="Untitled-2.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="navbar">
+    <div class="logo">Connectia</div>
+    <nav class="menu" id="menu">
+      <a href="inicio.html">Inicio</a>
+    </nav>
+     <a href="sesion.html">Perfil</a>
+     
+    <div class="hamburger" id="hamburger">
+      ☰
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero comunidad-hero">
+    <div class="hero-content">
+      <h1>La comunidad que crea juntos</h1>
+      <p>Descubre personas que comparten tus pasiones y construyen un futuro colaborativo.</p>
+    </div>
+  </section>
+
+  <!-- Miembros destacados -->
+  <section class="features">
+    <h2>Miembros destacados</h2>
+    <div class="feature-grid">
+      <div class="card">
+        <img src="persona2.jpg" alt="Usuario 1" class="avatar">
+        <h3>Ana López</h3>
+        <p>Diseñadora UX apasionada por proyectos sociales.</p>
+        <button class="btn-secondary">Ver perfil</button>
+      </div>
+      <div class="card">
+        <img src="persona1.jpg" alt="Usuario 2" class="avatar">
+        <h3>Diego Ramos</h3>
+        <p>Programador web que crea herramientas educativas.</p>
+        <button class="btn-secondary">Ver perfil</button>
+      </div>
+      <div class="card">
+        <img src="persona3.jpg" alt="Usuario 3" class="avatar">
+        <h3>Lucía Pérez</h3>
+        <p>Fotógrafa y creadora de contenido sostenible.</p>
+        <button class="btn-secondary">Ver perfil</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proyectos de la comunidad -->
+  <section class="projects">
+    <h2>Proyectos en marcha 🚀</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>GreenUp App</h3>
+        <p>Aplicación que enseña hábitos ecológicos mediante retos diarios.</p>
+        <span>Colaboradores: 5</span>
+      </div>
+      <div class="project-card">
+        <h3>EduConnect</h3>
+        <p>Red para conectar estudiantes con mentores profesionales.</p>
+        <span>Colaboradores: 8</span>
+      </div>
+      <div class="project-card">
+        <h3>ArtLink</h3>
+        <p>Plataforma para artistas que buscan exponer y vender sus obras locales.</p>
+        <span>Colaboradores: 4</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Connectia. Unidos para crear el futuro.</p>
+  </footer>
+
+  <!-- Script menú -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const menu = document.getElementById('menu');
+    hamburger.addEventListener('click', () => {
+      menu.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>
